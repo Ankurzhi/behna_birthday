@@ -286,9 +286,9 @@
       const wish = document.getElementById("wish").value || "Happy Birthday! You are amazing in every way!";
 
       const text =
-        `New birthday wish for you!%0A` +
-        `From: ${encodeURIComponent(name)}%0A` +
-        `Wish: ${encodeURIComponent(wish)}`;
+        `My Wishes !%0A` +
+        `Wish: ${encodeURIComponent(wish)}%0A` +
+       `From: ${encodeURIComponent(name)};` 
 
       const url = `https://wa.me/${MY_WHATSAPP_NUMBER}?text=${text}`;
       window.open(url, "_blank");
