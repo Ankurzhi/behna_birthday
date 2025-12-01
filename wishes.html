@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Birthday Wishes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #fddb92, #d1fdff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 900px;
+      background: rgba(255, 255, 255, 0.97);
+      border-radius: 20px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+    }
+
+    /* NAVBAR */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid #ffd1dc;
+    }
+
+    nav .logo {
+      font-weight: bold;
+      font-size: 1rem;
+      color: #ff5e7e;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      font-size: 0.9rem;
+      color: #ff5e7e;
+      font-weight: 600;
+      padding: 6px 10px;
+      border-radius: 20px;
+      transition: background 0.2s;
+    }
+
+    nav ul li a:hover {
+      background: #ffe7ef;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+      background: linear-gradient(120deg, #f6d365, #fda085);
+      color: #fff;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+
+    .content {
+      padding: 20px 25px 25px;
+    }
+
+    section {
+      margin-bottom: 25px;
+    }
+
+    section h2 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+      color: #ff5e7e;
+      border-left: 4px solid #ff5e7e;
+      padding-left: 8px;
+    }
+
+    .wish-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .wish-card {
+      background: #fff7e6;
+      border-radius: 12px;
+      padding: 12px 14px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .wish-card strong {
+      display: block;
+      margin-bottom: 5px;
+      color: #ff5e7e;
+    }
+
+    form {
+      margin-top: 10px;
+      background: #fff7fb;
+      border-radius: 12px;
+      padding: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    label {
+      display: block;
+      font-size: 0.85rem;
+      color: #444;
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 8px 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      border: 1px solid #ffd1dc;
+      font-size: 0.9rem;
+      outline: none;
+    }
+
+    textarea {
+      min-height: 80px;
+      resize: vertical;
+    }
+
+    .btn {
+      padding: 8px 16px;
+      border-radius: 20px;
+      border: none;
+      background: #ff5e7e;
+      color: #fff;
+      font-size: 0.85rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+      margin-right: 8px;
+    }
+
+    .btn:hover {
+      background: #ff3b63;
+      transform: translateY(-1px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #preview {
+      margin-top: 10px;
+      font-size: 0.85rem;
+      color: #555;
+      display: none;
+    }
+
+    footer {
+      font-size: 0.8rem;
+      text-align: center;
+      padding: 10px;
+      color: #777;
+      border-top: 1px solid #f0f0f0;
+      background: #fff;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <nav>
+      <div class="logo">🎂 Sister's Birthday</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="wishes.html">Wishes</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <h1>💌 Birthday Wishes</h1>
+      <p>Some words from my heart, just for you.</p>
+    </header>
+
+    <div class="content">
+      <section>
+        <h2>My Favourite Wishes for You 🌟</h2>
+        <div class="wish-list">
+          <div class="wish-card">
+            <strong>Wish 1</strong>
+            May your life be filled with happiness as bright as your smile and success as big as your heart.
+          </div>
+          <div class="wish-card">
+            <strong>Wish 2</strong>
+            I pray that all your dreams slowly turn into reality and you never lose your beautiful energy.
+          </div>
+          <div class="wish-card">
+            <strong>Wish 3</strong>
+            No matter how old we grow, I will always be there to tease you, support you and love you.
+          </div>
+          <div class="wish-card">
+            <strong>Wish 4</strong>
+            May this year bring you new adventures, new memories and everything you secretly wished for.
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Write Your Own Wish ✍️</h2>
+        <p style="font-size:0.9rem; color:#555;">
+          This is just for fun on the website (it doesn’t save anywhere).  
+          You can type something and see the preview, then send it to my WhatsApp.
+        </p>
+
+        <form id="wishForm">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" placeholder="e.g. Your Brother / Your Name" />
+
+          <label for="wish">Your Special Wish</label>
+          <textarea id="wish" placeholder="Write your birthday wish here..."></textarea>
+
+          <button type="button" class="btn" id="previewBtn">Show Preview</button>
+          <button type="button" class="btn" id="whatsappBtn">Send to WhatsApp</button>
+        </form>
+
+        <div id="preview"></div>
+      </section>
+    </div>
+
+    <footer>
+      You deserve all the love in the world, today and always 💖
+    </footer>
+  </div>
+
+  <script>
+    const previewBtn = document.getElementById("previewBtn");
+    const whatsappBtn = document.getElementById("whatsappBtn");
+    const previewDiv = document.getElementById("preview");
+
+    previewBtn.addEventListener("click", () => {
+      const name = document.getElementById("name").value || "Someone who loves you";
+      const wish = document.getElementById("wish").value || "Happy Birthday! You are amazing in every way!";
+
+      previewDiv.style.display = "block";
+      previewDiv.innerHTML = `
+        <strong>Preview:</strong><br><br>
+        <em>${wish}</em><br><br>
+        — <strong>${name}</strong>
+      `;
+    });
+
+    // 👉 Change this to YOUR WhatsApp number (with country code, no + sign)
+    const MY_WHATSAPP_NUMBER = "91XXXXXXXXXX"; // example: "919876543210"
+
+    whatsappBtn.addEventListener("click", () => {
+      const name = document.getElementById("name").value || "Someone who loves you";
+      const wish = document.getElementById("wish").value || "Happy Birthday! You are amazing in every way!";
+
+      const text =
+        `New birthday wish for you!%0A` +
+        `From: ${encodeURIComponent(name)}%0A` +
+        `Wish: ${encodeURIComponent(wish)}`;
+
+      const url = `https://wa.me/${MY_WHATSAPP_NUMBER}?text=${text}`;
+      window.open(url, "_blank");
+    });
+  </script>
+</body>
+</html>
