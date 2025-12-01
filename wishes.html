@@ -279,15 +279,15 @@
     });
 
     // 👉 Change this to YOUR WhatsApp number (with country code, no + sign)
-    const MY_WHATSAPP_NUMBER = "7763023756"; // example: "919876543210"
+    const MY_WHATSAPP_NUMBER = "912278101"; // example: "919876543210"
 
     whatsappBtn.addEventListener("click", () => {
       const name = document.getElementById("name").value || "Someone who loves you";
       const wish = document.getElementById("wish").value || "Happy Birthday! You are amazing in every way!";
 
       const text =
-        `My Wishes !%0A` +
-        `Wish: ${encodeURIComponent(wish)}%0A` +
+        `My Wishes 💕😍 !%0A` +
+        `${encodeURIComponent(wish)}%0A` +
        `From: ${encodeURIComponent(name)};` 
 
       const url = `https://wa.me/${MY_WHATSAPP_NUMBER}?text=${text}`;
